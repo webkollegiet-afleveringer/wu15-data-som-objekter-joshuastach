@@ -1,4 +1,3 @@
-heroDOM.insertAdjacentHTML("afterbegin", heroString)
 
 //eksempel på at udskrive alle overskrifter i services i konsollen:
 // services.forEach((service) => {
@@ -9,6 +8,12 @@ heroDOM.insertAdjacentHTML("afterbegin", heroString)
 //     servicesDOM.insertAdjacentHTML("afterbegin", headlineH2)
 // }
 // )
+
+// const heroString = /*html */`
+//     <img src="${hero.image}" alt="ja da" class="kkhkh">
+//     <h2>${hero.headline}</h2>
+//     <div>${profile}</div> `
+// heroDOM.insertAdjacentHTML("afterbegin", heroString)
 
 // heroImg = document.createElement("img")
 // heroImg.src = hero.image;
@@ -32,3 +37,12 @@ heroDOM.insertAdjacentHTML("afterbegin", heroString)
 // iconImg = document.createElement("img")
 // iconImg.src = hero.icon;
 // iconDOM.append(iconImg)
+
+// const serviceString = /* html */ `
+//     <div class="service-container">
+//         <figure class="promoting"> 
+//             <img src="${}">
+//         <figure>
+//     </div>
+// `
+
