@@ -131,22 +131,24 @@ img{
     margin-bottom: 0;
     padding-bottom: 0;
 } .fac-wrapper a{
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 
 /* --- Main --- --- Sites --- */
 .sites{
     display: grid;
     grid-template-columns: 1.6fr 1fr 1fr 1fr;
-    width: 86%;
+    width: 95%;
     margin: 0 auto;
     margin-top: 10rem;
+    gap: 2rem;
 } .community-wrapper{
     display: flex;
     flex-direction: column;
+    width: 80%;
 } .squirrel-button{
     background-color: #F78065;
-    width: 10rem;
+    width: 11rem;
     height: 3rem;
     display: flex;
     flex-direction: row;
@@ -158,4 +160,61 @@ img{
 } .squirrel-button img{
     width: 1.5rem;
     height: 1.5rem;
+} .view-image{
+    aspect-ratio: 100/175;
+    object-fit: cover;
+
+} .community{
+    font-size: 1.5rem;
+    width: 90%;
+    margin-bottom: 0;
+} @media (width > 1250px){
+    .community{
+        font-size: 2.75rem;
+    }
+    section.sites .community-wrapper p{
+        font-size: 1.25rem;
+    }
+    .squirrel-button{
+        width: 12.5rem;
+    }
+}
+
+.community-wrapper p{
+    width: 100%;
+    font-size: 1.05rem;
+    margin-bottom: 20%;
+    color: grey;
+} .view-wrapper{
+    display: flex;
+    flex-direction: column;
+} .view-wrapper h3{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+} .city{
+    color: #3F3D56;
+    margin-bottom: 0.5rem;
+} .squirrel-link{
+    color: #F78065;
+    text-decoration: none;
+}
+
+/* --- Main --- --- Advantages --- */
+
+.adv-container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 85%;
+    margin: 0 auto;
+    gap: 2rem;
+}  .advantages{
+    margin-top: 8rem;
+}
+
+
+/* --- Footer --- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
 }
