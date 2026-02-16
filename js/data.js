@@ -19,7 +19,7 @@ let services = [
         headline: "Additional services designed for the needs of campers",
         text: "Travelling often means that you dont have time to organise excursions along your route. EasyCamper takes care of that!",
         linktext: "Discover the Guided Tours and additional services that you can link to your structure"
-    }, 
+    },
     {
         illustration: "https://dazzling-squirrel-77a63d.netlify.app/imgs/illustrations/destination.png",
         headline: "Free online showcase with promotion in Italy and abroad",
@@ -30,7 +30,7 @@ let services = [
 
 let facilities = {
     headline: "Making your facility known is our priority",
-    options : [
+    options: [
         {
             icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/list-check.png",
             headline: "Choose the type of stop",
@@ -79,17 +79,17 @@ let sites = {
 
 let advantages = [
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/compare.png",
         headline: "Convenience and Transparency",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/library_books.png",
         headline: "Digital marketing and editorial support",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
     {
-        icon:"https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
+        icon: "https://dazzling-squirrel-77a63d.netlify.app/imgs/icons/Compare-HSV.png",
         headline: "Community of services dedicated to campers",
         text: "You don’t have to find out later or only after camenierk and trarsparent Easyamper ratains pliacas and beautias of your tariaary and halpin a fixed commission on each transaction of 5"
     },
@@ -100,70 +100,70 @@ let advantages = [
 let footer = {
     headline: "Eazy Camper",
     small: "When Passion Meets Comfort.",
-    copyright:"EazyCamper. All rights reserved.",
-    navList:[
+    copyright: "EazyCamper. All rights reserved.",
+    navList: [
         {
-            li:"About"
+            li: "About"
         },
         {
-            li:"Site Map"
+            li: "Site Map"
         },
         {
-            li:"Terms"
+            li: "Terms"
         },
         {
-            li:"Privacy Policy"
+            li: "Privacy Policy"
         },
         {
-            li:"Teams"
+            li: "Teams"
         }
     ],
-    listItems:[
+    listItems: [
         {
-            headline:"Discover the Network",
-            links:[
+            headline: "Discover the Network",
+            links: [
                 {
-                    link:"Where to shop"
+                    link: "Where to shop"
                 },
                 {
-                    link:"Tour Guided"
+                    link: "Tour Guided"
                 },
                 {
-                    link:"Our Tours"
+                    link: "Our Tours"
                 },
                 {
-                    link:"About us"
+                    link: "About us"
                 }
             ]
         },
         {
-            headline:"Become a Manager",
-            links:[
+            headline: "Become a Manager",
+            links: [
                 {
-                    link:"Join your pairing"
+                    link: "Join your pairing"
                 },
                 {
-                    link:"Offer your Service"
+                    link: "Offer your Service"
                 },
                 {
-                    link:"Are you a guide?"
+                    link: "Are you a guide?"
                 },
             ]
         },
         {
-            headline:"Assistance",
-            links:[
+            headline: "Assistance",
+            links: [
                 {
-                    link:"Support Center"
+                    link: "Support Center"
                 },
                 {
-                    link:"FAQs"
+                    link: "FAQs"
                 },
                 {
-                    link:"Cancallation Options"
+                    link: "Cancallation Options"
                 },
                 {
-                    link:"Reliabilty and Security"
+                    link: "Reliabilty and Security"
                 },
             ]
         }

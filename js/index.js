@@ -75,7 +75,7 @@ servicesDOM.insertAdjacentHTML("afterbegin", serviceContainer)
 const servConDOM = document.querySelector(".service-container")
 
 services.forEach((service) => {
-  let serviceString = /* html */ `
+    let serviceString = /* html */ `
         <figure class="squirrel"> 
             <img src="${service.illustration}" alt="illustration of service and promoting" class="squirrel-img">
             <figcaption> 
@@ -93,8 +93,8 @@ services.forEach((service) => {
         <figure>
       `
 
-  document.createElement("img")
-  servConDOM.insertAdjacentHTML("afterbegin", serviceString)
+    document.createElement("img")
+    servConDOM.insertAdjacentHTML("afterbegin", serviceString)
 })
 
 const facilityDOM = document.querySelector(".facilities")
@@ -109,7 +109,7 @@ facilityDOM.insertAdjacentHTML("afterbegin", facHeadlineString)
 const facConDOM = document.querySelector(".fac-container")
 
 facilities.options.forEach((facility) => {
-  let showString = /* html */`
+    let showString = /* html */`
         <div class="fac-wrapper">
         <img src="${facility.icon}" alt="icons" class="show-icon">
         <h3 class="show-headline">
@@ -119,7 +119,7 @@ facilities.options.forEach((facility) => {
         <a href="#" class="squirrel-color">Show me more</a>
         </div>
         `
-  facConDOM.insertAdjacentHTML("afterbegin", showString)
+    facConDOM.insertAdjacentHTML("afterbegin", showString)
 })
 
 const siteDOM = document.querySelector(".sites")
@@ -136,7 +136,7 @@ const startString = /* html */`
 siteDOM.insertAdjacentHTML("afterbegin", startString)
 
 sites.places.forEach((view) => {
-  let viewString = /* html */`
+    let viewString = /* html */`
             <div class="view-wrapper"> 
                 <img src="${view.img}" alt="places to uhhhh view" class="view-image">
                 <h3>${view.name}</h3>
@@ -144,7 +144,7 @@ sites.places.forEach((view) => {
                 <a href="#" class="squirrel-link">View the Site</a>
             </div>
         `
-  siteDOM.insertAdjacentHTML("beforeend", viewString)
+    siteDOM.insertAdjacentHTML("beforeend", viewString)
 })
 
 const advantageDOM = document.querySelector(".advantages")
@@ -159,7 +159,7 @@ advantageDOM.insertAdjacentHTML("afterbegin", advHeadlineString)
 const advantageContainer = document.querySelector(".adv-container")
 
 advantages.forEach((advantaging) => {
-  let advantageString = /* html */`
+    let advantageString = /* html */`
         <div class="fac-wrapper">
             <img src="${advantaging.icon}" alt="icons" class="show-icon">
             <h3 class="show-headline">
@@ -168,7 +168,7 @@ advantages.forEach((advantaging) => {
             <p>${advantaging.text}</p>
         </div>
         `
-  advantageContainer.insertAdjacentHTML("afterbegin", advantageString)
+    advantageContainer.insertAdjacentHTML("afterbegin", advantageString)
 })
 // jeg kopired bare facility scripted fordi jeg gider ikke at skrive det hele manuelt igen :(
 
@@ -219,23 +219,73 @@ passion.insertAdjacentHTML("afterbegin", passionString)
 //     })
 
 // })
+
+const listItemsString = /*html*/`
+    ${footer.listItems.map((item) => ` <section> <h2>${item.headline}</h2> <ul class=""> ${item.links.map((thislink) => `<li>${thislink.link}</li>`).join("")}</ul> </section>`
+).join("")}`
+
+
+
 const footerElement = document.createElement("div");
-footer.listItems.map((listItem) => {
-  // console.log(item);
-  const wrapper = document.createElement("div")
-  const headline = document.createElement("h3");
-  const linksWrapper = document.createElement("ul");
-  console.log(listItem)
-  for (var link of listItem.links) {
-    console.log(link)
-    const linkElement = document.createElement("a");
-    linkElement.href = "#";
-    linkElement.textContent = link.link;
-    linksWrapper.append(linkElement)
-  };
-  wrapper.append(headline);
-  wrapper.append(linksWrapper)
-  footerElement.append(wrapper)
-})
+footerElement.classList.add("link-wrapper")
+// footer.listItems.map((listItem) => {
+//     // console.log(item);
+//     const wrapper = document.createElement("div")
+//     const headline = document.createElement("h3");
+//     const linksWrapper = document.createElement("ul");
+//     //console.log(listItem)
+//     for (var link of listItem.links) {
+//         console.log(link)
+//         const linkElement = document.createElement("a");
+//         linkElement.href = "#";
+//         linkElement.textContent = link.link;
+//         linksWrapper.append(linkElement)
+//     };
+//     //wrapper.append(headline);
+//     //wrapper.append(linksWrapper)
+//     //footerElement.append(wrapper)
+// })
 
 passion.insertAdjacentElement("beforeend", footerElement)
+footerElement.insertAdjacentHTML("beforeend", listItemsString)
+
+
+
+
+
+
+
+const navContainerString = /* html */ `
+    <div class="nav-listing">
+        <nav>
+            <ul class="nav-ul">
+
+            </ul>
+        </nav>
+    </div>
+`
+footies.insertAdjacentHTML("beforeend", navContainerString)
+const navUl = document.querySelector(".nav-ul");
+const listings = document.querySelector(".nav-listing");
+
+footer.navList.forEach((navList) => {
+    let footerListingString = /* html */`
+        <li> 
+            <a href="#"> 
+                ${navList.li}
+            </a>
+        </li>
+    `
+    console.log(footer);
+    navUl.insertAdjacentHTML("beforeend", footerListingString)
+
+});
+
+
+const copyString = /* html */`
+    <small>
+        ${footer.copyright}
+    </small>
+
+`
+listings.insertAdjacentHTML("afterbegin", copyString)
