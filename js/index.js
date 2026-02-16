@@ -219,7 +219,7 @@ passion.insertAdjacentHTML("afterbegin", passionString)
 //     })
 
 // })
-const footerElement = document.createElement("footer");
+const footerElement = document.createElement("div");
 footer.listItems.map((listItem) => {
   // console.log(item);
   const wrapper = document.createElement("div")
